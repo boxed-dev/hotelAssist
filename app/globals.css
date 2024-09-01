@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #e0e0e0;
+  background: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+body input,
+body textarea {
+  color: #333;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 12px 0;
+}
+
+code {
+  color: #ff8c00;
+  background: #2e2e2e;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+li {
+  padding: 6px 0;
+  list-style-type: disc;
+  margin-left: 20px;
+}
