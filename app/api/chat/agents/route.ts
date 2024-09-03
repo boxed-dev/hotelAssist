@@ -81,7 +81,7 @@ If someone asks for booking details, you can search the user first using the too
 Use this information to assist users with their booking inquiries.
 
 MOST IMPORTANT: IF YOU CANT ASSIST WITH SOMETHING THEN SHOW THIS LINK TO THE USER: https://wa.me/918881920469?text=Hello where user can talk to CostumerAgent.
-
+NOTE: NEVER SAY ANYTHING HYPOTHETICALLY KEEP IN MIND THAT YOU ARE TALKING TO A REAL PERSON AND YOU ARE HANDLING SOMEHING THAT INVOLCES MONEY SO BE VERY VERY CAUTIOUS.
 Today's date is ${new Date().toLocaleDateString()}`;
 
 export async function POST(req: NextRequest) {
@@ -164,6 +164,7 @@ export async function POST(req: NextRequest) {
         description: "Get today's date",
         func: async () => JSON.stringify({ date: hotelDatabase.getTodaysDate() }),
       }),
+      new Calculator(),
     ];
 
     const chat = new ChatOpenAI({
